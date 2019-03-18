@@ -10,17 +10,17 @@
   "author": "ushiboy",
   "license": "MIT",
   "dependencies": {
-    "@ushiboy/cyclone": "^0.1.1",
+    "@ushiboy/cyclone": "^0.2.0",
     "@ushiboy/react-cyclone": "file:../..",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
   "devDependencies": {
     "babel-loader": "^8.0.5",
-    "eslint": "^5.15.1",
+    "eslint": "^5.15.2",
     "file-loader": "^3.0.1",
     "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3",
+    "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
   }
 }
