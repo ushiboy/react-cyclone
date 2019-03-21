@@ -65,13 +65,21 @@ ReactDOM.render(
 
 ## API
 
-### <Provider />
+### `<Provider />`
 
-TBD
+It passes the state mapped to properties to the React component that applied `connect`.
+
+#### Props
+
+| Name | Type | Description |
+| ---- | ---- | ----------- |
+| store | Store<S, A> | The Store of Cyclone. |
 
 ### connect
 
-TBD
+It makes it possible to receive the state mapped to properties from `Provider`.
+
+If you set the `mapStateToProps` function to its argument, you can customize the state to the properties and pass it.
 
 ```javascript
 connect(): (view: React$Component) => React$Component;
