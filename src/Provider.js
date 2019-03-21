@@ -18,8 +18,8 @@ export class Provider extends Component {
   }
 
   componentWillUnmount() {
-    if (this._listener) {
-      this.props.store.unsubscribe(this._listener);
+    if (this._unsubscriber) {
+      this._unsubscriber();
     }
   }
 
@@ -34,7 +34,7 @@ export class Provider extends Component {
 
   _subscribeStore() {
     const { store } = this.props;
-    this._listener = () => {
+    this._unsubscriber = store.subscribe(() => {
       const newState = store.getState();
 
       this.setState(providerState => {
@@ -43,8 +43,7 @@ export class Provider extends Component {
         }
         return { storeState: newState };
       });
-    };
-    store.subscribe(this._listener);
+    });
   }
 }
 
