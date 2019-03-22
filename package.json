@@ -1,7 +1,7 @@
 {
   "name": "@ushiboy/react-cyclone",
   "version": "0.1.0",
-  "description": "",
+  "description": "React bindings for Cyclone",
   "main": "lib/index.js",
   "files": [
     "src",
@@ -38,5 +38,9 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0-0",
+    "@ushiboy/cyclone": "^0.2.0"
   }
 }
