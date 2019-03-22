@@ -1,7 +1,7 @@
 {
   "name": "@ushiboy/react-cyclone",
   "version": "0.1.0",
-  "description": "",
+  "description": "React bindings for Cyclone",
   "main": "lib/index.js",
   "files": [
     "src",
