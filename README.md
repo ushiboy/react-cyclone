@@ -86,6 +86,19 @@ connect(): (view: React$Component) => React$Component;
 connect<S, P>(mapStateToProps: (state: S) => P): (view: React$Component) => React$Component;
 ```
 
+Example of passing mapStateToProps as an argument.
+
+```javascript
+// state: { a: any, b: any, c: any }
+const Connected = connect(state => {
+  const { a, b } = state;
+  return {
+    a,
+    b
+  };
+})(View);
+```
+
 ## Change Log
 
 ### 0.1.0
