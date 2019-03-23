@@ -1,6 +1,8 @@
 # React-Cyclone
 
-React-Cyclone is a React bindings for Cyclone.
+[![Build Status](https://travis-ci.org/ushiboy/react-cyclone.svg?branch=master)](https://travis-ci.org/ushiboy/react-cyclone)
+
+React-Cyclone is a React bindings for [Cyclone](https://www.npmjs.com/package/@ushiboy/cyclone).
 
 ## Quick Sample
 
